@@ -37,8 +37,13 @@ main {
     background-color: var(--White);
     margin-top: 90px;
 }
-.imagem {
+picture{
     width: 50%;
+    flex-shrink: 0;
+}
+.imagem {
+    width: 100%;
+    display: block;
 }
 .conteudo {
     display: flex;
@@ -115,4 +120,16 @@ main {
 }
 .attribution a { 
     color: var(--attribuition);
+}
+@media (max-width: 600px){
+    main{
+        padding: 0 15px;
+    }
+    .card{
+        flex-direction: column
+    }
+    picture{
+        width: 100%;
+    }
+
 }
